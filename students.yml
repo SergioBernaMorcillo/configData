@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: student
+    name: students
   datasource:
     driverClassName: org.mariadb.jdbc.Driver
     url: jdbc:mariadb://localhost:3306/cursojava
@@ -19,7 +19,7 @@ spring:
 
 info:
   application:
-    name: student
+    name: students
 
 eureka:
   instance:
