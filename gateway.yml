@@ -14,9 +14,9 @@ spring:
           enabled: true
       routes:
         - id: course
-          uri: lb://course
+          uri: lb://courses
           predicates:
-            - Path=/api/v1/course/**
+            - Path=/api/v1/courses/**
         - id: students
           uri: lb://students
           predicates:
