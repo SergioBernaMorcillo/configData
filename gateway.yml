@@ -13,14 +13,14 @@ spring:
         Locator:
           enabled: true
       routes:
-        - id: products
-          uri: lb://productos
+        - id: course
+          uri: lb://course
           predicates:
-            - Path=/api/v1/productos/**
-        - id: reviews
-          uri: lb://review
+            - Path=/api/v1/course/**
+        - id: students
+          uri: lb://students
           predicates:
-            - Path=/review/**
+            - Path=/api/v1/students/**
   
 
 
