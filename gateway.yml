@@ -20,6 +20,8 @@ spring:
           uri: lb://students
           predicates:
             - Path=/api/v1/students/**
+            - Path=/actuator/refresh  # Añadir path para redireccionar /refresh si es necesario
+
 
 info:
   application:
@@ -35,9 +37,10 @@ eureka:
 management:
   endpoints:
     gateway:
-      enablesd: true
+      enabled: true
         
   endpoint:
     web:
       expose:
-        include: gateway
+        include: health,info,refresh,gateway  # Añadir 'refresh' si quieres exponerlo
+
