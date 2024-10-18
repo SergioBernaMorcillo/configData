@@ -21,7 +21,6 @@ spring:
           predicates:
             - Path=/api/v1/students/**
 
-
 info:
   application:
      name: gateway
@@ -36,10 +35,9 @@ eureka:
 management:
   endpoints:
     gateway:
-      enabled: true
+      enablesd: true
         
   endpoint:
     web:
       expose:
         include: gateway
-
